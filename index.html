@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise CSS Animations Linel Almonte</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <nav>
+        <ul class="sidebar">
+            <li onclick="hideSidebar()"><a href="#"><svg id="close-icon" xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#FFFFFF"><path d="m249-207-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
+            <li><a href="#">Keyboards</a></li>
+            <li><a href="#">Mouse Pads</a></li>
+            <li><a href="#">Mouses</a></li>
+            <li><a href="#">KeyCaps</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+
+        <ul>
+            <li class="hideOnMobile"><a href="#">Keyboards</a></li>
+            <li class="hideOnMobile"><a href="#">Mouse Pads</a></li>
+            <li class="hideOnMobile"><a href="#">Mouses</a></li>
+        </ul>
+
+        <h1><span class="akira">AKIRA</span> ALT</h1>
+
+        <ul>
+            <li class="hideOnMobile"><a href="#">KeyCaps</a></li>
+            <li class="hideOnMobile"><a href="#">Contact</a></li>
+            <li class="hideOnMobile"><a href="#">About</a></li>
+
+            <li onclick="showSidebar()"><a href="#"><svg class="menu-button" xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48px" fill="#FFFFFF"><path d="M120-240v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
+        </ul>
+    </nav>
+    
+    <header>
+        <div class="background-img">
+            <section class="container">
+                <h2>50% OFF</h2>
+                <h3>all products and <span class="free">free</span> shipping</h3>
+                <p>Unleash your full potential with Akira ALT. Engineered for ultimate performance, our keyboards give you the precision and speed needed to conquer every keystroke. Get ready to elevate your experience and unlock new levels of productivity and play.</p>
+            </section>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <div class="section1">
+                <h3>AKIRA ALT Mechanical <span class="fter-alt">Gaming Keyboards</span></h3>
+                <p>Dominate the game with AKIRA ALT Mechanical Gaming Keyboards. Built for elite gamers, every keypress is amplified by precision-engineered switches, lightning-fast responsiveness, and customizable RGB lighting. Designed with both performance and style in mind, the AKIRA ALT keyboard ensures you stay ahead of the competition, unlocking your full gaming potential with every keystroke.</p>
+            </div>
+        </section>
+
+        <section>
+            <div class="section2">
+                <div class="keyboard">
+                    <img src="./images/B75PRO_f1b6d7a4-7e58-4ace-a1a7-b39fef253ba4.webp" alt="AKIRA75 PRO keyboard">
+                    <div class="name">AKIRA75 PRO</div>
+                    <div class="description">Wireless | Creamy Typing | Gasket</div>
+                    <button>Buy Now</button>
+                </div>
+
+                <div class="keyboard">
+                    <img src="./images/YZ98_ad884582-bd3b-43a1-ba4a-22078faf4be8.webp" alt="AKIRA85 ELITE keyboard">
+                    <div class="name">AKIRA85 ELITE</div>
+                    <div class="description">Keyboard with Numpad | Wireless</div>
+                    <button>Buy Now</button>
+                </div>
+
+                <div class="keyboard">
+                    <img src="./images/yz75_5b1213a9-4c3d-463b-bfff-92276657358e.webp" alt="Bebas Neue keyboard" class="lastkey">
+                    <div class="name">AKIRA Neue</div>
+                    <div class="description">Wireless | Hot Swappable | 75% Layout</div>
+                    <button>Buy Now</button>
+                </div>
+            </div>
+        </section>
+
+        <img src="./images/pexels-tanphuc-14130157.jpg" alt="keyboard and mouse pad" class="img2">
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <h3><span class="fter-alt">AKIRA</span> ALT</h3>
+            <p>&copy; 2024 AKIRA ALT. All Rights Reserved.</p>
+            <p>Follow us on <a href="#">Facebook</a>, <a href="#">Twitter</a>, and <a href="#">Instagram</a>.</p>
+        </div>
+    </footer>
+
+<script>
+    function showSidebar(){
+        const sidebar = document.querySelector('.sidebar');
+        sidebar.style.display = 'flex';
+    }
+    function hideSidebar(){
+        const sidebar = document.querySelector('.sidebar');
+        sidebar.style.display = 'none';
+    }
+</script>
+</body>
+</html>
